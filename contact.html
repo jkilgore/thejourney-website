@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — The Journey</title>
   <meta name="description" content="Get in touch with The Journey team. We'd love to hear from you." />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css?v=3" />
 </head>
 <body>
 
@@ -114,43 +114,24 @@
           </div>
         </div>
 
-        <!-- Right: Form -->
-        <div class="contact-form-box">
-          <h3>Send us a message</h3>
-          <!--
-            NOTE: To make this form functional, connect it to a form handler.
-            Easy options for Cloudflare Pages:
-              - Formspree (formspree.io) — add action="https://formspree.io/f/YOUR_ID"
-              - Cloudflare Email Routing + Workers
-            For now the form is set to POST to a placeholder.
-          -->
-          <form action="#" method="POST">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="first_name" placeholder="Jane" required />
-              </div>
-              <div class="form-group">
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last_name" placeholder="Smith" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required />
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="What's this about?" />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell us what's on your mind..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
-              Send Message
-            </button>
-          </form>
+        <!-- Right: Email CTA -->
+        <div class="contact-form-box contact-email-box">
+          <div class="contact-email-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M2 7l10 7 10-7"/>
+            </svg>
+          </div>
+          <h3>Send us an email</h3>
+          <p>We'd love to hear from you — whether you're a student, parent, or someone who wants to get involved. We try to respond within a couple of days.</p>
+          <a href="mailto:contact@theweekendjourney.com" class="btn btn-primary contact-email-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M2 7l10 7 10-7"/>
+            </svg>
+            Email Us
+          </a>
+          <p class="contact-email-address">contact@theweekendjourney.com</p>
         </div>
 
       </div>
@@ -175,7 +156,7 @@
         </div>
         <div class="card">
           <h3 style="font-size:1rem; margin-bottom:8px;">How can I volunteer?</h3>
-          <p>We'd love to have you. Send us a message through the form above or reach out on Facebook. We'll get you connected.</p>
+          <p>We'd love to have you. <a href="mailto:contact@theweekendjourney.com" style="color:var(--blue);">Email us</a> or reach out on Facebook and we'll get you connected.</p>
         </div>
         <div class="card">
           <h3 style="font-size:1rem; margin-bottom:8px;">How can I donate?</h3>

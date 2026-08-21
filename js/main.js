@@ -4,6 +4,23 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* ----- Dynamic Season Badge ----- */
+  const badge = document.getElementById('hero-season-badge');
+  if (badge) {
+    const now = new Date();
+    const month = now.getMonth() + 1; // 1-12
+    const year = now.getFullYear();
+    let season;
+    if (month >= 3 && month <= 10) {
+      season = `Fall ${year}`;
+    } else if (month >= 11) {
+      season = `Spring ${year + 1}`;
+    } else {
+      season = `Spring ${year}`;
+    }
+    badge.textContent = `Now accepting applications for ${season}`;
+  }
+
   /* ----- Mobile Nav ----- */
   const hamburger = document.querySelector('.hamburger');
   const mobileMenu = document.querySelector('.mobile-menu');
