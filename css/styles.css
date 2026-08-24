@@ -176,8 +176,9 @@ h4 { font-size: 0.95rem; font-weight: 600; }
   font-size: 1rem;
   flex-shrink: 0;
 }
-/* When actual logo image is swapped in */
-.logo-mark img { width: 100%; height: 100%; object-fit: contain; border-radius: 10px; }
+/* Real logo image */
+.nav-logo-img { height: 38px; width: auto; display: block; }
+.footer-logo-img { height: 38px; width: auto; display: block; filter: brightness(0) invert(1); }
 
 /* Links */
 .nav-links {
@@ -416,6 +417,10 @@ footer {
   box-shadow: var(--shadow);
 }
 .hero-img-wrap .img-ph { aspect-ratio: 4/3; width: 100%; }
+.hero-img-wrap .hero-photo { width: 100%; display: block; aspect-ratio: 4/3; object-fit: cover; }
+
+/* Real photos in split sections */
+.split-img .split-photo { width: 100%; display: block; aspect-ratio: 5/4; object-fit: cover; }
 
 
 /* ================================================================
