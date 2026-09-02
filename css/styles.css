@@ -178,7 +178,7 @@ h4 { font-size: 0.95rem; font-weight: 600; }
 }
 /* Real logo image */
 .nav-logo-img { height: 76px; width: auto; display: block; }
-.footer-logo-img { height: 38px; width: auto; display: block; filter: brightness(0) invert(1); }
+.footer-logo-img { height: 38px; width: auto; display: block; }
 
 /* Links */
 .nav-links {
