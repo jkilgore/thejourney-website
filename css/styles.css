@@ -36,7 +36,7 @@ button { cursor: pointer; font-family: 'Poppins', sans-serif; }
   --shadow:    0 4px 28px rgba(0,0,0,0.07);
   --shadow-sm: 0 2px 10px rgba(0,0,0,0.05);
 
-  --nav-h: 70px;
+  --nav-h: 90px;
   --max-w: 1140px;
 }
 
@@ -177,7 +177,7 @@ h4 { font-size: 0.95rem; font-weight: 600; }
   flex-shrink: 0;
 }
 /* Real logo image */
-.nav-logo-img { height: 38px; width: auto; display: block; }
+.nav-logo-img { height: 76px; width: auto; display: block; }
 .footer-logo-img { height: 38px; width: auto; display: block; filter: brightness(0) invert(1); }
 
 /* Links */
